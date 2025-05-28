@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<h1 class="AllroMichelle">Collecting Age Data In Peachblossoms School Using A Histogram</h1\>
+
+<div class="hello">
+    <h1 class="joker">A histogram is a bar graph that shows how data is distributed across different ranges or intervals. It helps us to visualize how often values occur within each range. For example, Wes used a histogram to find the age distribution of people in Peachblossoms School by grouping ages into ranges and seeing how many people fell into each group.
+</h1>
+<div class="Title-Histogram"> <h1>The Age of People in Peachblossoms in 2025</h1> </div>
+
+<style>
+body {
+  background-color: #FFFAEB;
+}
+</style>
+</head>
+
+<body> 
+
+   
+
+    </div>
+
+    <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        var data = [13, 13, 12, 13, 12, 12, 12, 12, 13, 13, 
+         13, 13, 13, 12, 12, 13, 13, 13, 13, 13, 12, 12, 12,
+         12, 12, 12, 12 ,12, 13, 13, 14, 13, 13, 14, 13, 13, 
+         13, 13, 13, 13, 13, 14, 14, 15, 14, 14, 15, 15, 14, 
+         14, 15, 14, 14, 15, 14, 14, 15, 14, 15, 15, 15, 15,
+         14, 15, 14, 15, 16, 16, 16, 16, 15, 15, 15, 16, 16,
+         17, 42, 31, 30, 29, 30, 25, 67, 27, 32, 42, 23, 44,
+         26, 30, 35, 33, 29, 25, 32, 45, 24, 20, 25, 19, 36];
+
+        var interval = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70];
+        
+        var intervalCounts = new Array(interval.length - 1).fill(0);
+
+        data.forEach(value => {
+            for (var i = 0; i < interval.length - 1; i++) {
+                if (value >= interval[i] && value < interval[i + 1]) {
+                    intervalCounts[i]++;
+                    break;
+                }
+            }
+        });
+
+        var Amanda = document.getElementById
+        ('myChart');
+      
+        new Chart(Amanda, {
+          type: 'bar',
+          data: {
+            labels: interval.slice(0, -1).map((b, i) => `${b}-${interval[i + 1]}`),
+            
+            datasets: [{
+              label: '# of Votes',
+              data: intervalCounts,
+              backgroundColor: [
+                'rgba(202, 237, 255, 0.8)',
+                'rgba(251, 240, 178, 0.8)',
+                'rgba(255, 199, 234, 0.8)',
+              ],
+              borderWidth: 0,
+              barPercentage: 1.0,
+              categoryPercentage: 1.0,
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+       
+</body>
+</html>
