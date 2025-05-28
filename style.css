@@ -1,0 +1,97 @@
+.sigmaboy {
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@keyframes animasi {
+    100% {
+        background-position: 25% 50%;
+    }
+}
+
+body {
+    background-image: url("Pink\ Tornado.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animasi 5s infinite alternate ease-in;
+}
+
+.hai {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.yes {
+    margin-top: 50px;
+}
+
+.hello {
+     margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.joker {
+    text-align: left;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+
+.Title-Histogram {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2C2C2C;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.AllroMichelle {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background {
+    background-color: #FFFAEB;
+    text-align: center;
+}
+
+.sub-title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 75px;
+    color: black;
+
+}
+
+.title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    text-align: center;
+    border: 2px solid black;
+    color:  black;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #FFFAEB;
+
+}
